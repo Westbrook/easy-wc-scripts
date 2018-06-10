@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+
 yarn add git+https://github.com/Westbrook/easy-wc-scripts.git
+rm ./node_modules/easy-wc-scripts/package.json
+rm ./node_modules/easy-wc-scripts/README.md
 cp -R ./node_modules/easy-wc-scripts/. ./
 yarn remove git+https://github.com/Westbrook/easy-wc-scripts.git
